@@ -13,49 +13,94 @@
     <title>Portfolio - Matias Soruco</title>
 </head>
 
-<body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark px-5">
-        <a class="navbar-brand" href="#">MS</a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="my-1 mx-2 close">X</span>
-          <span class="navbar-toggler-icon"></span>
+<body id="colorIndex">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5">
+        <a class="navbar-brand" href="#"><img class="logo" src="./img/logo.png"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto mr-4">
-                 
-          <li class="nav-item align-self-center">
-            <a class="nav-link" href="./views/proyectos.html">PROYECTOS</a>
-          </li>
-    
-            <li class="nav-item align-self-center">
-              <a class="nav-link" href="./views/perfil.html">PERFIL</a>
-            </li>
-            
-            <li class="nav-item align-self-center">
-              <a class="nav-link" href="./views/contacto.html">CONTACTO</a>
-            </li>
-            
-            <li class="drop-div">
-              <div class="dropdown-divider"></div>
-            </li>
-    
-            <li class="nav-item align-self-center" id="separador">
-              <a class="nav-link"> | <span class="sr-only">(current)</span> </a>
-            </li>
-    
-            <li class="nav-item active align-self-center"> 
-              <a class="nav-link">es<span class="sr-only">(current)</span> </a>
-            </li>
-    
-            <li class="nav-item align-self-center">
-              <a class="nav-link" href="#">en</a>
-            </li>
-    
+            <ul class="navbar-nav ml-auto mr-4">
+
+                <li class="nav-item align-self-center">
+                    <a class="nav-link" href="#perfil">PERFIL</a>
+                </li>
+
+                <li class="nav-item align-self-center">
+                    <a class="nav-link" href="#proyectos">PROYECTOS</a>
+                </li>
+                <li class="nav-item align-self-center">
+                    <a class="nav-link" href="#habilidades">HABILIDADES</a>
+                </li>
+
+                <li class="nav-item align-self-center">
+                    <a class="nav-link" href="#contactos">CONTACTO</a>
+                </li>
+
+                <li class="drop-div">
+                    <div class="dropdown-divider"></div>
+                </li>
+
+                <li class="nav-item align-self-center hidden" id="separador">
+                    <a class="nav-link hidden"> | <span class="sr-only">(current)</span> </a>
+                </li>
+
+                <li class="nav-item active align-self-center">
+                    <a class="nav-link">ES <img class="idioma" src="./img/spain.png"><span
+                            class="sr-only">(current)</span> </a>
+                </li>
+
+                <li class="nav-item align-self-center">
+                    <a class="nav-link" href="./indexEn.html">EN <img class="idioma" src="./img/united-kingdom.png"></a>
+                </li>
+
             </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="container-fluid marg2">
+                <div id="section1">
+                    <img src="./img/undraw2.svg">
+                    <h4>Desarollador Front-End.</h4>
+                  </div>
             </div>
-        </nav>
-  <main>
-  </main>
+            </section>
+            <div class="centrar">
+                <svg width="5" height="900" viewBox="0 0 1 150" fill="none">
+                  <line x1="2" y1="150" x2="0.999993" y2="4.37114e-08" stroke="white" stroke-width="3"></line>
+                </svg>
+              </div>
+              <section>
+                <div class="container-fluid marg1">
+                    <div id="section1">
+                        <h1>¿Quien soy?</h1>
+                        <img src="./img/undraw_firmware_re_fgdy.svg">
+                        <p>Mi nombre es Matias Soruco, tengo 22 años, actualmente vivo en Córdoba, Argentina. Soy Desarollador Front End, me desarolle en Coderhouse en los año 2021-2022. Actualmente estoy trabajando de manera freelancer, pero estoy interesado en buscar trabajos en equipos que me permitan crecer personal y profesionalmente.</p>
+                      </div>
+                </div>
+                </section>
+                <div class="centrar">
+                    <svg width="5" height="900" viewBox="0 0 1 150" fill="none">
+                      <line x1="2" y1="150" x2="0.999993" y2="4.37114e-08" stroke="white" stroke-width="3"></line>
+                    </svg>
+                  </div>
+            <section>
+                <div class="container-fluid marg1">
+                    <div id="section2">
+                        <h1>Portfolio</h1>
+                        <div class="row row-cols-2 portfolio">
+                            <div class="col"><img src="img/logo.png"></div>
+                            <div class="col"><img src="img/logo.png"></div>
+                            <div class="col"><img src="img/logo.png"></div>
+                            <div class="col"><img src="img/logo.png"></div>
+                          </div>
+                      </div>
+                </div>
+                </section>
+        
+    </main>
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
