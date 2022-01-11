@@ -14,11 +14,26 @@ body {
 }
 
 #colorIndex {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1695d8), color-stop(#0285cc), color-stop(#0075c0), color-stop(#0065b3), color-stop(#0455a5), color-stop(#03509e), color-stop(#014c96), color-stop(#00478f), color-stop(#004c8b), color-stop(#005086), color-stop(#005380), to(#13567a));
-  background-image: linear-gradient(to bottom, #1695d8, #0285cc, #0075c0, #0065b3, #0455a5, #03509e, #014c96, #00478f, #004c8b, #005086, #005380, #13567a);
+  background-image: url(/img/fondo.svg);
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow-x: hidden;
+}
+
+.centrar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
 }
 
 .navbar ul li a {
@@ -62,13 +77,13 @@ body {
   }
 }
 
-.marg2 {
+.cardIndex {
   color: #fff;
   padding: 50px;
-  margin: 50px auto;
+  margin: 70px auto;
 }
 
-.marg2 img {
+.cardIndex img {
   width: 80px;
   height: 300px;
   display: -webkit-box;
@@ -78,12 +93,27 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: auto auto 20px auto;
-  border: solid 1px #fff;
+  border: solid 5px #fff;
   border-radius: 90%;
   width: 300px;
 }
 
-.marg2 h4 {
+.cardIndex h3 {
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardIndex h4 {
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,16 +163,6 @@ body {
 
 .portfolio img {
   width: 200px;
-}
-
-.centrar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 991px) {
