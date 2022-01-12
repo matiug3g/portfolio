@@ -14,7 +14,7 @@ body {
 }
 
 #colorIndex {
-  background-image: url(/img/fondo.svg);
+  background-image: url(../img/fondo.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
