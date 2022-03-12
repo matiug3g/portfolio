@@ -11,12 +11,15 @@
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Roboto Condensed', sans-serif;
 
 }
 
 #colorIndex {
-    background-image: url(../img/fondo.svg);
+    // background-image: url(../img/fondo.svg);
+    background-image: url(../img/fondow.jpg);
     // background-image: linear-gradient(to bottom, #1695d8, #0285cc, #0075c0, #0065b3, #0455a5, #03509e, #014c96, #00478f, #004c8b, #005086, #005380, #13567a);
     background-position: center;
     background-size: cover;
@@ -32,21 +35,22 @@ body {
     text-align: center;
     margin: auto;
 }
-
 .navbar {
     ul {
         li {
             a {
-                font-size: 20px;
+                font-size: 16px;
                 transition: transform .5s;
             }
-            a:hover{
+
+            a:hover {
                 color: #fff !important;
                 transform: scale(1.1);
             }
         }
     }
 }
+
 .idioma {
     width: 20px;
     margin: auto auto 2px auto;
@@ -134,10 +138,24 @@ body {
         font-weight: lighter;
     }
 }
-
+.hola{
+    background: #0f0c29; 
+  background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); 
+  opacity: 0.7;
+}
 .portfolio {
     img {
-        width: 200px;
+        width: 500px;
+        height: 450px;
+        border-radius: 15px;
+        transition: transform .4s;
+        justify-content: center;
+
+        &:hover{
+            transform: scale(1.1);
+            // filter:brightness(50%);
+        }
     }
 }
 
