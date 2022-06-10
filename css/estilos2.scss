@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import "colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.black{
+  background-color: black;
+}
+#colorIndex {
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.navbar {
+  width: 100%;
+    height: 80%;
+    border-top: 5px solid $colorPrincipal;
+    border-bottom: 1px solid whitesmoke;
+
+  ul {
+    li {
+      a {
+        color: black !important;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        transition: transform 0.9s;
+      }
+
+      a:hover {
+        color: $colorPrincipal !important;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.idioma {
+  width: 20px;
+  margin: auto auto 2px auto;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 5px;
+    margin: 15px;
+    font-weight: 100;
+    color: $colorPrincipal;
+    border: solid 2px $colorPrincipal;
+    border-radius: 5%;
+    animation-duration: 3s;
+    animation-name: aparece;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes aparece {
+    0% {
+        border: solid 2px $colorPrincipal;
+        border-radius: 10%;
+    }
+    25% {
+
+        border: solid 2px $colorPrincipal;
+        border-radius: 25%;
+    }
+    50% {
+        border: solid 2px $colorPrincipal;
+        border-radius: 50%;
+    }
+    75% {
+        border: solid 2px $colorPrincipal;
+        border-radius: 70%;
+    }
+
+    100% {
+        border-radius: 100%;
+    }
+}
+.principalCard {
+  color: #171923;
+  display: grid;
+  justify-content: center;
+  img {
+    width: 300px;
+  }
+}
+.grid-container {
+  margin: 250px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 200px;
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+  }
+  mark {
+    background-color: #9ae6b4;
+  }
+  img{
+    margin: -80px auto auto auto;
+    width: 250px;
+    border: 1px solid #171923;
+    border-radius: 90%;
+  }
+}
+.btnResumen{
+    color: $colorPrincipal;
+    border-color: $colorPrincipal;
+    a{
+      text-decoration: none; 
+      color: $colorPrincipal;
+    }
+    a:hover{
+      color: #fff;
+    }
+}
+.btnResumen:hover{
+    color: #fff;
+    background-color: $colorPrincipal;
+    border-color: $colorPrincipal;
+    a{
+      color: #fff;
+    }
+}
+.cardFooter{
+  margin-top: 102px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid $colorPrincipal;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  a{
+    text-decoration: none;
+    color: black;
+    :hover{
+      color: $colorPrincipal;
+    }
+  }
+  
+  i{
+    margin-top: 30px;
+  }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  .hidden {
+    display: none !important;
+  }
+}
