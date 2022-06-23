@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import "colors.scss";
+
+.logo {
+    font-size: 20px;
+    padding: 5px;
+    margin: 15px;
+    font-weight: 100;
+    color: $colorPrincipal;
+    border: solid 2px $colorPrincipal;
+    border-radius: 5%;
+    animation-duration: 3s;
+    animation-name: aparece;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes aparece {
+    0% {
+      border: solid 2px $colorPrincipal;
+      border-radius: 10%;
+    }
+    25% {
+      border: solid 2px $colorPrincipal;
+      border-radius: 25%;
+    }
+    50% {
+      border: solid 2px $colorPrincipal;
+      border-radius: 50%;
+    }
+    75% {
+      border: solid 2px $colorPrincipal;
+      border-radius: 70%;
+    }
+  
+    100% {
+      border-radius: 100%;
+    }
+  }

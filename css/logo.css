@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+.logo {
+  font-size: 20px;
+  padding: 5px;
+  margin: 15px;
+  font-weight: 100;
+  color: #38A169;
+  border: solid 2px #38A169;
+  border-radius: 5%;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparece;
+          animation-name: aparece;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aparece {
+  0% {
+    border: solid 2px #38A169;
+    border-radius: 10%;
+  }
+  25% {
+    border: solid 2px #38A169;
+    border-radius: 25%;
+  }
+  50% {
+    border: solid 2px #38A169;
+    border-radius: 50%;
+  }
+  75% {
+    border: solid 2px #38A169;
+    border-radius: 70%;
+  }
+  100% {
+    border-radius: 100%;
+  }
+}
+
+@keyframes aparece {
+  0% {
+    border: solid 2px #38A169;
+    border-radius: 10%;
+  }
+  25% {
+    border: solid 2px #38A169;
+    border-radius: 25%;
+  }
+  50% {
+    border: solid 2px #38A169;
+    border-radius: 50%;
+  }
+  75% {
+    border: solid 2px #38A169;
+    border-radius: 70%;
+  }
+  100% {
+    border-radius: 100%;
+  }
+}/*# sourceMappingURL=logo.css.map */

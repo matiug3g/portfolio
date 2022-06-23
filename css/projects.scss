@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import "colors.scss";
+
+.cardEdit {
+    display: inline;
+    h5 {
+      color: $colorPrincipal;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .cards {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 10px auto;
+    border: solid 1px $colorPrincipal;
+   
+    .card {
+      width: 250px;
+      margin: auto;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .determinadoProjects{
+    width: 350px;
+    height: 400px;
+  }

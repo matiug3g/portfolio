@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+.aboutMeCard {
+  margin: auto;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+.aboutMeCard h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.aboutMeCard p {
+  font-size: 1rem;
+  width: 50%;
+  margin: auto auto 30px auto;
+}
+.aboutMeCard p mark {
+  background-color: #9ae6b4;
+}
+.aboutMeCard img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  width: 350px;
+}/*# sourceMappingURL=aboutMe.css.map */

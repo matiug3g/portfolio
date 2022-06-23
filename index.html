@@ -1,113 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <script src="https://kit.fontawesome.com/25b079f5b4.js" crossorigin="anonymous"></script>
-    <script src="wow/wow.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bs/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5a1b973327.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Portfolio - Matias Soruco</title>
-</head>
+  </head>
 
-<body id="colorIndex">
-    <nav class="navbar navbar-expand-lg navbar-dark px-5">
-        <a class="navbar-brand" href="#"><img class="logo" src="./img/logo.png"></a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto mr-4">
+  <body id="colorIndex">
+    <nav class="navbar navbar-expand-lg px-5">
+      <h3 class="logo">MS</h3>
+      <button
+        class="navbar-toggler collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="true"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon">
+          <i
+            class="fa-solid fa-bars-staggered"
+            style="color: #38a169; font-size: 26px"
+          ></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto mr-4">
+          <li class="nav-item align-self-center">
+            <a class="nav-link abcdx" href="#perfil">About me</a>
+          </li>
 
-                <li class="nav-item align-self-center">
-                    <a class="nav-link abcdx" href="#perfil">PERFIL</a>
-                </li>
+          <li class="nav-item align-self-center">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item align-self-center">
+            <a class="nav-link" href="#contactos">Contact</a>
+          </li>
+          <button class="switch" id="switch">
+            <span><i class="fa-solid fa-sun"></i></span>
+            <span><i class="fa-solid fa-moon"></i></span>
+          </button>
 
-                <li class="nav-item align-self-center">
-                    <a class="nav-link" href="#proyectos">PROYECTOS</a>
-                </li>
-                <li class="nav-item align-self-center">
-                    <a class="nav-link" href="#habilidades">HABILIDADES</a>
-                </li>
-
-                <li class="nav-item align-self-center">
-                    <a class="nav-link" href="#contactos">CONTACTO</a>
-                </li>
-
-                <li class="drop-div">
-                    <div class="dropdown-divider"></div>
-                </li>
-
-                <li class="nav-item align-self-center hidden" id="separador">
-                    <a class="nav-link hidden"> | <span class="sr-only">(current)</span> </a>
-                </li>
-
-                <li class="nav-item active align-self-center">
-                    <a class="nav-link">ES <img class="idioma" src="./img/spain.png"><span
-                            class="sr-only">(current)</span> </a>
-                </li>
-
-                <li class="nav-item align-self-center">
-                    <a class="nav-link" href="./indexEn.html">EN <img class="idioma" src="./img/united-kingdom.png"></a>
-                </li>
-
-            </ul>
-        </div>
+          <li class="drop-div">
+            <div class="dropdown-divider"></div>
+          </li>
+        </ul>
+      </div>
     </nav>
     <main>
-        <section>
-            <div class="container-fluid cardIndex">
-                <div id="section1">
-                    <img src="./img/face_co.svg">
-                    <h3 class="wow rotateIn">Matias Soruco</h3>
-                    <h4>Frontend Developer</h4>
-                  </div>
-            </div>
-            </section>
-            <div class="centrar">
-                <svg width="2" height="500" viewBox="0 0 1 150" fill="none">
-                  <line x1="2" y1="150" x2="0.999993" y2="4.37114e-08" stroke="white" stroke-width="3"></line>
-                </svg>
-              </div>
-              <section class="hola">
-                <div class="container-fluid marg1">
-                    <div id="section1">
-                        <h1>¿Quien soy?</h1>
-                        <img src="./img/undraw_firmware_re_fgdy.svg">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque non sit aspernatur repellat, illum blanditiis excepturi repudiandae, dolorum debitis maiores facere, harum dignissimos. Nesciunt officia possimus illum magnam eveniet dolor?</p>
-                      </div>
-                </div>
-                </section>
-                <div class="centrar">
-                    <svg width="2" height="500" viewBox="0 0 1 150" fill="none">
-                      <line x1="2" y1="150" x2="0.999993" y2="4.37114e-08" stroke="white" stroke-width="3"></line>
-                    </svg>
-                  </div>
-            <section>
-                <div class="container-fluid marg1">
-                    <div id="section2">
-                        <h1>Portfolio</h1>
-                        <div class="row row-cols-2 portfolio">
-                            <div class="col"><img src="img/uno.jpg"></div>
-                            <div class="col"><img src="img/dos.jpg"></div>
-                            <div class="col"><img src="img/tres.jpg"></div>
-                            <div class="col"><img src="img/cuatro.jpg"></div>
-                          </div>
-                      </div>
-                </div>
-                </section>
-        
+      <section class="centrar">
+        <div class="grid-container">
+          <div class="grid-item"><img src="img/ilustracionIndex.svg" /></div>
+          <div class="grid-item">
+            <h1>Hi, <mark>I'm Matias</mark>. Nice to meet you.</h1>
+            <h2>I'm Front End Developer based in Córdoba, Argentina</h2>
+            <button type="button" class="btn btnResumen">
+              <a
+                href="https://drive.google.com/file/d/1gSrqPHtCMhRWHFwzrzb1K2gQFMP1vz7L/view?usp=sharing"
+                >My resumen</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="centrar">
+        <svg width="2.5" height="250" viewBox="0 0 1 350" fill="none">
+          <line
+            x1="3"
+            y1="250"
+            x2="0.999993"
+            y2="4.37114e-08"
+            stroke="#38A169"
+            stroke-width="3"
+          ></line>
+        </svg>
+      </div>
+      <div class="titles">
+      <h2 id="perfil">About me</h2>
+    </div>
+      <section class="aboutMeCard" >
+        <img src="img/Aboutme.svg" />
+        <p>
+          I am passionate about the world of <mark>web development</mark>. I
+          really like the idea of being able to collaborate with the development
+          of a tool that provides solutions or facilitates tasks. I would like
+          to work in environments where people are committed, where they seek to
+          enhance the learning of each one by providing support and tools for
+          their projection. I enjoy the good weather and friendly environment, I
+          consider that it is the key to success for a good job.
+        </p>
+      </section>
+      <div class="centrar">
+        <svg width="2.5" height="250" viewBox="0 0 1 350" fill="none">
+          <line
+            x1="3"
+            y1="250"
+            x2="0.999993"
+            y2="4.37114e-08"
+            stroke="#38A169"
+            stroke-width="3"
+          ></line>
+        </svg>
+      </div>
+      <div class="titles">
+        <h2 id="projects">Projects</h2>
+      </div>
+      <div class="container-fluid card-group cardEdit">
+        <div class="cards">
+        <div class="card determinadoProjects">
+          <img src="./img/uno.jpg" class="card-img-top" alt="card-group-image">
+          <div class="card-body">
+            <h5 class="card-title">First Project</h5>
+            <p class="card-text">Proyecto de calculadora, realizado con HTML, CS, JSS       </p>
+          </div>
+        </div>
+        <div class="card determinadoProjects">
+          <img src="./img/dos.jpg" class="card-img-top" alt="card-group-image">
+          <div class="card-body">
+            <h5 class="card-title">Second Project</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card determinadoProjects">
+          <img src="./img/tres.jpg" class="card-img-top" alt="card-group-image">
+          <div class="card-body">
+            <h5 class="card-title">Three Project</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card determinadoProjects">
+          <img src="./img/cuatro.jpg" class="card-img-top" alt="card-group-image">
+          <div class="card-body">
+            <h5 class="card-title">Fourth Project</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      </div>
     </main>
+    <footer>
+      <div class="cardFooter">
+        <a href="https://www.linkedin.com/in/mgsoruco/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/matiug3g/"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
-</body>
-
+  </body>
 </html>
