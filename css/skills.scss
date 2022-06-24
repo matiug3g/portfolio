@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import "colors.scss";
+
+
+.gridSkills {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    gap: 30px;
+    margin: 30px auto 90px auto;
+    img {
+      width: 165px;
+      height: 155px;
+      padding: 15px;
+    }
+  }
+  .itemSkill {
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    transition: transform 0.9s;
+  &:hover{
+      transform: scale(1.1);
+    }
+    p {
+      font-size: 20px;
+      font-weight: lighter;
+    }
+  }

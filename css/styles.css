@@ -19,6 +19,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 .navbar {
   width: 100%;
   height: 80%;
@@ -213,41 +219,6 @@
   height: 400px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  font-family: "Roboto Condensed", sans-serif;
-  transition: 0.3s ease all;
-}
-body.dark {
-  background-color: #1d4044;
-  color: #fff;
-  transition: 0.3s ease all;
-}
-
-#colorIndex {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow-x: hidden;
-}
-
-.centrar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-}
-
 .switch {
   display: flex;
   height: 35px;
@@ -294,15 +265,6 @@ body.dark {
   color: #fff;
 }
 
-.titles h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 body.dark .navbar {
   border-bottom: 0;
 }
@@ -318,11 +280,88 @@ body.dark .cardFooter i:hover {
 }
 
 body.dark .determinadoProjects {
-  border: solid 1px #fff;
+  border: solid 2px #38A169;
+  padding: 5px;
   background-color: #1d4044;
 }
 body.dark .determinadoProjects h5 {
   color: #fff;
+}
+
+body.dark .itemSkill {
+  background-clip: border-box;
+  border: 2px solid #38A169;
+}
+
+.gridSkills {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  grid-template-rows: 0fr 1fr;
+  gap: 30px;
+  margin: 30px auto 90px auto;
+}
+.gridSkills img {
+  width: 165px;
+  height: 155px;
+  padding: 15px;
+}
+
+.itemSkill {
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  transition: transform 0.9s;
+}
+.itemSkill:hover {
+  transform: scale(1.1);
+}
+.itemSkill p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-family: "Roboto Condensed", sans-serif;
+  transition: 0.3s ease all;
+}
+body.dark {
+  background-color: #1d4044;
+  color: #fff;
+  transition: 0.3s ease all;
+}
+
+#colorIndex {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.titles h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -344,7 +383,7 @@ body.dark .determinadoProjects h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.4s;
+    transition: transform 0.9s;
   }
   .cards .card:hover {
     transform: scale(1.1);
@@ -373,6 +412,10 @@ body.dark .determinadoProjects h5 {
     font-size: 20px;
     display: flex;
     justify-content: start;
+  }
+
+  .gridSkills {
+    display: flex;
   }
 
   .titles h2 {
@@ -408,6 +451,10 @@ body.dark .determinadoProjects h5 {
 @media only screen and (min-width: 1455px) {
   .hidden {
     display: none !important;
+  }
+
+  .gridSkills {
+    display: flex;
   }
 
   .grid-container {
