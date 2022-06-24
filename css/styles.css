@@ -362,6 +362,8 @@ body.dark {
   align-items: center;
   text-align: center;
   margin-bottom: 30px;
+  -webkit-text-decoration: underline 10px #38A169;
+          text-decoration: underline 10px #38A169;
 }
 
 @media only screen and (min-width: 992px) {
